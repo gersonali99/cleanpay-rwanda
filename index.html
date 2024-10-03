@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanPay Voting System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/header-logo.png" alt="CleanPay Logo" class="header-logo">
+        <h1>CleanPay Project</h1>
+    </header>
+
+    <section class="summary">
+        <h2>Support the CleanPay Project</h2>
+        <p>CleanPay is a simple waste management system that ensures fairness in how people pay for garbage collection. After making one payment, you get 4 or more collection counts each month, depending on the company’s agreement with you. You won’t need to pay again for 30 days unless you use up all your collection counts. Every time your garbage is collected, a count is removed from your card. Once all your counts are used, you’ll need to pay again. This system helps make sure everyone pays fairly and only for the services they use. 🌍😊</p>
+    </section>
+
+    <section class="voting">
+        <h3>Do you support implementing CleanPay in Kigali?</h3>
+        <form id="vote-form">
+            <input type="radio" name="vote" value="yes" id="yes"> Yes<br>
+            <input type="radio" name="vote" value="no" id="no"> No<br>
+            <button type="button" onclick="submitVote()">Submit Vote</button>
+        </form>
+    </section>
+
+    <section class="results">
+        <h3>Current Votes</h3>
+        <p>Yes: <span id="yes-count">0</span></p>
+        <p>No: <span id="no-count">0</span></p>
+    </section>
+
+    <footer>
+        <img src="images/footer-image.png" alt="Footer Image" class="footer-image">
+        <div class="contact">
+            <p>Contact Us: info@cleanpay.com | +250 791 240 557</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
